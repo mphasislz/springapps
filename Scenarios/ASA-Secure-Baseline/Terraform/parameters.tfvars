@@ -27,9 +27,9 @@ SRINGAPPS_SPN_OBJECT_ID = "7065bba1-d2d1-4581-9023-58c095dc959e"
 ##################################################
 
 # Deployment state storage information
-state_sa_name           = "<change this>"
-state_sa_rg             = "<change this>"
-state_sa_container_name = "<change this>"
+state_sa_name           = "springapptf1"
+state_sa_rg             = "springappsterraform"
+state_sa_container_name = "springappsterraform"
 
 ##################################################
 ## 02 Hub Virtual Network
