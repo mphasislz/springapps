@@ -132,7 +132,6 @@ jobs:
       - name: Terraform Apply
         run: terraform apply my.plan
   destroy_lz_standard:
-    needs: [conditions, deploy_lz_standard, destroy_pet_clinic_infra]
     name: Destroy 06 LZ Spring Apps Standard
     runs-on: ubuntu-latest
     if: needs.conditions.outputs.destroy == 'true'
@@ -170,7 +169,6 @@ jobs:
       - name: Terraform Apply
         run: terraform apply my.plan
   destroy_hub_firewall:
-    needs: [destroy_lz_standard, conditions]
     name: Destroy 05 Hub Firewall
     runs-on: ubuntu-latest
     if: needs.conditions.outputs.destroy == 'true'
@@ -208,7 +206,7 @@ jobs:
       - name: Terraform Apply
         run: terraform apply my.plan
   destroy_lz_shared:
-    needs: [destroy_hub_firewall, conditions]
+    needs: [ conditions]
     name: Destroy 04 LZ Shared Resources
     runs-on: ubuntu-latest
     if: needs.conditions.outputs.destroy == 'true'
