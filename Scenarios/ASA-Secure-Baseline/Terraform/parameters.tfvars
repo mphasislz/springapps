@@ -14,7 +14,7 @@ environment = "dev"
 # Use this command to obtain:
 #    az ad sp show --id e8de9221-a19c-4c81-b814-fd37c6caf9d2 --query id --output tsv
 
-SRINGAPPS_SPN_OBJECT_ID = "7065bba1-d2d1-4581-9023-58c095dc959e"
+SRINGAPPS_SPN_OBJECT_ID = "f0229b54-24a5-41af-911b-6a4ae0d01a0f"
 
 # tags = { 
 #    project = "ASA-Accelerator"
@@ -27,7 +27,7 @@ SRINGAPPS_SPN_OBJECT_ID = "7065bba1-d2d1-4581-9023-58c095dc959e"
 ##################################################
 
 # Deployment state storage information
-state_sa_name           = "springapptf1"
+state_sa_name           = "springapptf2"
 state_sa_rg             = "springappsterraform"
 state_sa_container_name = "springappsterraform"
 
